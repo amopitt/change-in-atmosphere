@@ -1,22 +1,49 @@
 <html>
-  <head>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="width: 578px; border: 5px black solid; border-bottom: 0px; padding: 15px; text-align: center">
-      RIP... <br />
-      <br />
+<head>
+  <style>
+    html { 
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.1),
+         rgba(255, 255, 0, 0.4) 50%,
+          rgba(0, 0, 0, 0.1));
 
-      or coming soon??
+    }
+    body, html {
+      height: 100%; /* Make sure the body takes up the full viewport height */
+      margin: 0; /* Remove default margin */
+      display: flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      font-family: Arial, Helvetica, sans-serif;
 
-      <br />
-      <br />
+    }
+
+    .container {
+      display: flex; /* Use flexbox for alignment */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+
+    .chat-bubble {
+      width: 578px; 
+      border: 5px black solid; 
+      border-bottom: 0px; 
+      padding: 15px; 
+      text-align: center;
+    }
+
+    img {
+      display: block; /* Remove default inline display */
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <!-- Container to wrap elements -->
+    <div class="chat-bubble">
+      RIP... <br /><br />
+      or coming soon??<br /><br />
       GO BUCS 2024.
     </div>
     <img src="tabataold3.gif" />
-  </body>
+  </div>
+</body>
 </html>
